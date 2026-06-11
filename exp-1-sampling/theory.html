@@ -1,18 +1,18 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Virtual Labs | Electrical Machines Lab - Contributors</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Virtual Labs | Electrical Machines Lab - Theory</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./alert-theme.css">
-  <style>
+
+      <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
     body {
       font-family: 'Inter', sans-serif;
-      overflow-x: hidden;
     }
 
     /* Page blur when intro popup is open */
@@ -97,7 +97,7 @@
 
     /* Virtual Labs specific styling */
     .vl-header {
-      height: 70px;
+       height: 70px;
       background: linear-gradient(120deg, #021a2c, #064073, #0b60a8);
       box-shadow: 0 10px 30px rgba(2, 26, 44, 0.35);
     }
@@ -378,8 +378,8 @@
     }
 
     .chatbot-hint-dot {
-        position: relative;
-  left: -5px;
+      position: relative;
+      left: -5px;
       width: 22px;
       height: 22px;
       border-radius: 999px;
@@ -462,7 +462,7 @@
       pointer-events: auto;
     }
 
-    .chatbot-panel-header {
+   .chatbot-panel-header {
       padding: 1.1rem 1.35rem;
       background: linear-gradient(120deg, #021a2c, #064073, #0b60a8);
       color: #fff;
@@ -554,103 +554,6 @@
       text-indent: 0; /* No indentation, use spacing instead */
     }
 
-    .contributors-main {
-      min-width: 0;
-      padding-bottom: 6rem;
-    }
-
-    .contributors-content {
-      overflow: hidden;
-      min-width: 0;
-    }
-
-    .contributors-table-wrap {
-      max-width: 100%;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-gutter: stable;
-    }
-
-    .contributors-table {
-      width: 100%;
-      min-width: 720px;
-      border-collapse: separate;
-      border-spacing: 0;
-      table-layout: fixed;
-    }
-
-    @media (max-width: 1023px) {
-      .contributors-main {
-        padding: 1rem !important;
-        padding-bottom: 6rem !important;
-      }
-
-      .contributors-content {
-        padding: 1rem !important;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .contributors-table-wrap {
-        overflow: visible;
-      }
-
-      .contributors-table {
-        min-width: 0;
-      }
-
-      .contributors-table,
-      .contributors-table tbody,
-      .contributors-table tr,
-      .contributors-table td {
-        display: block;
-        width: 100%;
-      }
-
-      .contributors-table thead {
-        display: none;
-      }
-
-      .contributors-table tbody {
-        display: grid;
-        gap: 1rem;
-      }
-
-      .contributors-table tr {
-        border: 1px solid #d1d5db;
-        border-radius: 0.9rem;
-        overflow: hidden;
-        box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
-        background: #ffffff;
-      }
-
-      .contributors-table td {
-        display: grid;
-        grid-template-columns: minmax(88px, 108px) minmax(0, 1fr);
-        gap: 0.75rem;
-        padding: 0.75rem 1rem;
-        text-align: left !important;
-        border: 0 !important;
-        border-bottom: 1px solid #e5e7eb !important;
-        overflow-wrap: anywhere;
-      }
-
-      .contributors-table td::before {
-        content: attr(data-label);
-        font-weight: 700;
-        color: #0f172a;
-      }
-
-      .contributors-table td:last-child {
-        border-bottom: 0 !important;
-      }
-
-      .contributors-section-title {
-        font-size: 1.125rem !important;
-        line-height: 1.4;
-      }
-    }
-
     @media (max-width: 640px) {
       .chatbot-widget {
         bottom: 16px;
@@ -677,13 +580,13 @@
 <body class="bg-gray-50 min-h-screen">
 
   <!-- HEADER -->
-   <header class="vl-header shadow-xl fixed top-0 left-0 right-0 z-50">
+    <header class="vl-header shadow-xl fixed top-0 left-0 right-0 z-[1000]">
     <div class="header-inner px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between py-1 w-full">
         <!-- Logo Section - Absolute Left Corner -->
         <a href="../../main.html" class="logo-container hover:no-underline focus:no-underline"> <!-- Made logo clickable -->
           <img 
-            src="./images/image.png"  
+             src="./images/image.png" 
             alt="Virtual Labs Logo" 
             class="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12 rounded-xl object-contain bg-white p-1.5 logo-glow"
             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%230b60a8%22 width=%22100%22 height=%22100%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2240%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22 font-weight=%22bold%22%3EVL%3C/text%3E%3C/svg%3E'"
@@ -711,21 +614,21 @@
         <!-- Desktop Navigation (Optional) -->
          <nav class="top-nav hidden lg:flex items-center gap-2 lg:gap-3">
             <a href="../../main.html" class="nav-link">Home</a>
-            <a href="user_input.html?return=contributors.html" class="nav-link nav-user-link" data-user-input-link data-redirect-return="contributors.html">
+            <a href="user_input.html?return=theory.html" class="nav-link nav-user-link" data-user-input-link data-redirect-return="theory.html">
               <span class="nav-user-pill">
                
                 <span class="nav-user-text" data-user-text>User Input</span>
               </span>
             </a>
-             
+           
           </nav>
       </div>
     </div>
   </header>
 
- <div class="flex pt-16 min-h-screen">
+ <div class="flex pt-[70px] min-h-screen">
     <!-- Sidebar -->
-    <aside id="sidebar" class="vl-sidebar w-64 fixed inset-y-0 left-0 z-50 overflow-y-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out pt-20 lg:pt-6 pb-6">
+    <aside id="sidebar" class="vl-sidebar w-64 fixed left-0 top-[70px] bottom-0 z-[999] overflow-y-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out pb-6">
       <div class="px-4">
         <h2 class="text-lg font-semibold text-gray-800 mb-6 border-b border-gray-200 pb-4">Experiment Navigation</h2>
         <nav class="space-y-1">
@@ -792,7 +695,7 @@
     </svg>
     Contributors
   </a>
-         <a id="progressReportNav" href="#progressreport" class="menu-item flex items-center px-4 py-3 text-gray-700 rounded-lg group" data-progress-report-link>
+  <a id="progressReportNav" href="#progressreport" class="menu-item flex items-center px-4 py-3 text-gray-700 rounded-lg group" data-progress-report-link>
 
               <svg class="w-5 h-5 mr-3 opacity-70 group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -800,125 +703,294 @@
               </svg>
               Progress report
             </a>
-
         </nav>
       </div>
     </aside>
-
 
     <!-- MOBILE OVERLAY -->
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden hidden"></div>
 
     <!-- MAIN CONTENT -->
-    <main class="contributors-main flex-1 lg:ml-64 p-4 sm:p-6 pb-24">
+    <main class="flex-1 lg:ml-64 p-6">
 
       <!-- Breadcrumb -->
-       <nav class="mb-6 text-sm sm:text-base text-gray-600 animate-slideInLeft flex flex-wrap items-center gap-x-2 gap-y-1">
+      <nav class="mb-6 text-m text-gray-600 animate-slideInLeft flex items-center space-x-2">
         <a href="#" class="hover:text-blue-600 transition-colors">Home</a>
         <span>></span>
-        <a href="#" class="hover:text-blue-600">Electrical Machines Lab</a>
+        <a href="#" class="hover:text-blue-600">
+Image Processing Lab</a>
         <span>></span>
-        <span class="text-gray-800 font-medium">Contributors</span>
+
+        <a href="#" class="hover:text-blue-600">
+Sampling and Quantization</a>
+        <span>></span>
+
+
+        <span class="text-gray-800 font-medium">Theory</span>
       </nav>
 
       <!-- TITLE CARD -->
       <div class="vl-card mb-4 overflow-hidden animate-fadeInUp rounded-lg">
         <div class="px-4 py-3" style="background: linear-gradient(120deg, #021a2c, #064073, #0b60a8);">
           <h1 class="text-lg md:text-xl font-bold text-white text-center leading-snug">
-            To study the Load Characteristics of DC shunt generator
+            Sampling and Quantization
           </h1>
         </div>
       </div>
 
-      <!-- CONTRIBUTORS TABLE -->
-      <section class="section-content vl-card p-4 sm:p-6 animate-fadeInUp contributors-content">
-        <div class="border-l-4 border-blue-600 pl-4 mb-4">
-          <h2 class="contributors-section-title text-xl sm:text-2xl font-bold text-gray-800">Lab Proposer / Subject Matter Experts</h2>
-        </div>
+<!-- Theory Content -->
+<section class="section-content vl-card p-4 animate-fadeInUp">
 
-        <div class="contributors-table-wrap mt-4">
-          <table class="contributors-table border border-gray-300 bg-white rounded-lg">
-            <thead class="bg-gray-100">
-              <tr class="text-left text-gray-700 text-center">
-                <th class="border p-2">S.No.</th>
-                <th class="border p-2">Name</th>
-                <th class="border p-2">Email ID</th>
-                <th class="border p-2">Institute</th>
-                <th class="border p-2">Position</th>
-              </tr>
-            </thead>
+<div class="text-gray-700 text-lg leading-relaxed">
 
-            <tbody>
-              <tr class="text-gray-700 text-center">
-                <td class="border p-2" data-label="S.No.">1</td>
-                <td class="border p-2" data-label="Name">Dr RS Anand</td>
-                <td class="border p-2" data-label="Email ID">anandfee@gmail.com</td>
-                <td class="border p-2" data-label="Institute">IIT Roorkee</td>
-                <td class="border p-2" data-label="Position">Professor</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="border-l-4 border-blue-600 pl-4 mb-4 mt-8 sm:mt-10">
-          <h2 class="contributors-section-title text-xl sm:text-2xl font-bold text-gray-800">Lab Contributed By</h2>
-        </div>
+<style>
+.content{
+    width:100%;
+    max-width:none;
+    margin:0;
+    padding:0;
+    line-height:1.8;
+    text-align:justify;
+}
 
-        <div class="contributors-table-wrap mt-4">
-          <table class="contributors-table border border-gray-300 bg-white rounded-lg">
-            <thead class="bg-gray-100">
-              <tr class="text-left text-gray-700 text-center">
-                <th class="border p-2">S.No.</th>
-                <th class="border p-2">Name</th>
-                <th class="border p-2">Email ID</th>
-                <th class="border p-2">Institute</th>
-                <th class="border p-2">Position</th>
-              </tr>
-            </thead>
+.content h2:first-child{
+    margin-top:0 !important;
+}
 
-            <tbody>
-              <tr class="text-gray-700 text-center">
-                <td class="border p-2" data-label="S.No.">1</td>
-                <td class="border p-2" data-label="Name">Neha</td>
-                <td class="border p-2" data-label="Email ID">nehasaniya465@gmail.com</td>
-                <td class="border p-2" data-label="Institute">IIT Roorkee</td>
-                <td class="border p-2" data-label="Position">Project Associate</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+.content h2{
+    font-size:2rem;
+    margin-top:24px;
+    margin-bottom:12px;
+    color:#222;
+    font-weight:700;
+}
 
-      <section id="progressreport"
-               class="section-content vl-card mb-8 p-4 sm:p-6 animate-fadeInUp hidden">
+.content p,
+.content li{
+    font-size:1.1rem;
+}
 
-        <div class="border-l-4 border-orange-600 pl-4 mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-          <div class="flex items-center">
-            <h2 class="text-xl sm:text-2xl font-bold text-gray-800">
-              Progress Report
-            </h2>
+.content ul{
+    list-style:disc !important;
+    padding-left:40px !important;
+    margin:12px 0;
+}
+
+.content ol{
+    list-style:decimal !important;
+    padding-left:40px !important;
+    margin:12px 0;
+}
+
+.content li{
+    display:list-item !important;
+    margin-bottom:8px;
+}
+
+.content img{
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:20px auto;
+}
+
+.content figure{
+    text-align:center;
+    margin:25px 0;
+}
+
+.content figcaption{
+    color:#000 !important;
+    font-weight:700 !important;
+    font-size:1rem !important;
+    margin-top:10px;
+    opacity:1 !important;
+}
+
+.content figcaption b{
+    color:#000 !important;
+}
+</style>
+
+<div class="content">
+
+
+<style>
+.main-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #222;
+    margin: 20px 0 30px 0;
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
+
+@media (max-width: 768px){
+    .main-title{
+        font-size: 2.2rem;
+    }
+}
+</style>
+
+<div class="content">
+
+    <h2>Introduction</h2>
+
+    <p>
+        The digital representation of images is fundamental to numerous applications,
+        including medical imaging, satellite photography, remote sensing, and computer vision.
+        The process of converting a continuous analog image into a digital format involves two crucial steps:
+    </p>
+
+    <p><b>1. Sampling:</b> It refers to selecting discrete points from the continuous image
+        to create a digital representation.</p>
+
+    <p><b>2. Quantization:</b> It involves mapping a range of intensity values to a limited
+        number of discrete levels, reducing the data required for storage and processing.</p>
+
+    <figure>
+        <img src="images/s&q.png" alt="Sampling and Quantization">
+        <figcaption>
+            <b>Fig. 1 Visual representation of image sampling and quantization</b>
+        </figcaption>
+    </figure>
+
+    <ul>
+        <li>
+            <b>Top Row:</b> Shows how reducing the sampling rate (higher sampling factor)
+            affects image resolution. As the factor increases, image details are lost.
+        </li>
+
+        <li>
+            <b>Bottom Row:</b> Displays the impact of reducing quantization levels (bit depth).
+            With fewer levels, the image becomes more posterized, losing smooth transitions in shades.
+        </li>
+    </ul>
+
+    <h2>Image Sampling</h2>
+
+    <p>
+        Sampling is the process of converting a continuous-tone image into a discrete form by
+        selecting a finite number of points, called pixels. The sampling process directly affects
+        the spatial resolution of the digital image.
+    </p>
+
+    <p>
+        <b>1. Spatial Resolution and Sampling Rate</b><br>
+        Spatial resolution defines the number of pixels used to represent an image.
+        The sampling rate determines how frequently pixels are taken from the continuous image.
+        A higher sampling rate results in finer details and better quality, whereas a lower
+        sampling rate may lead to loss of critical image information.
+    </p>
+
+    <p>
+        <b>2. The Nyquist Sampling Theorem</b><br>
+        To accurately represent an image without introducing distortions, the Nyquist theorem
+        states that the sampling frequency should be at least twice the highest frequency present
+        in the image. If the sampling rate is too low, high-frequency components will be
+        misrepresented as lower frequencies, leading to aliasing artifacts.
+    </p>
+
+    <p>
+        <b>3. Aliasing and Its Effects</b><br>
+        Aliasing occurs when the sampling rate is insufficient to capture the high-frequency
+        details in an image, resulting in distortions such as Moiré patterns, jagged edges,
+        and loss of fine details.
+    </p>
+
+    <figure>
+        <img src="images/sampling.png" alt="Image Sampling">
+        <figcaption>
+            <b>Fig. 2 Generating a digital image (a) Continuous image (b) A scan line from A to B
+            in the continuous image, used to illustrate the concepts of sampling and quantization
+            (c) Sampling and Quantization (d) Digital scan line</b>
+        </figcaption>
+    </figure>
+
+    <h2>Image Quantization</h2>
+
+    <p>
+        Quantization is the process of reducing the number of distinct intensity levels in an image,
+        converting a continuous range of values into a finite set.
+    </p>
+
+    <p>
+        <b>1. Quantization Levels and Bit Depth</b><br>
+        The number of quantization levels defines how accurately pixel intensities are represented.
+        The bit depth of an image refers to the number of bits used to store the intensity of each pixel.
+    </p>
+
+    <p>
+        <b>2. Effects of Quantization</b>
+    </p>
+
+    <ul>
+        <li>
+            Higher Quantization Levels → More accurate intensity representation,
+            higher quality, but larger file size.
+        </li>
+
+        <li>
+            Lower Quantization Levels → Reduces file size but can cause visual
+            artifacts such as false contouring and loss of detail.
+        </li>
+    </ul>
+
+    <figure>
+        <img src="images/continuos.jpg" alt="Continuous Image">
+        <figcaption>
+            <b>Fig. 3 (a) Continuous image projected onto a sensor array
+            (b) Result of image sampling and quantization.</b>
+        </figcaption>
+    </figure>
+
+    <h2>Applications of Image Sampling and Quantization</h2>
+
+    <ul>
+        <li>Medical Imaging - Ensures accurate diagnosis while minimizing storage and processing requirements.</li>
+
+        <li>Image Compression - Used in JPEG and PNG formats to optimize storage without significant quality loss.</li>
+
+        <li>Computer Vision and AI - Properly sampled and quantized images improve object detection and machine learning accuracy.</li>
+
+        <li>Remote Sensing - Satellite images require high-resolution sampling for climate monitoring and urban planning.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+
+    <p>
+        Image sampling and quantization are essential steps in digital image processing that impact
+        resolution, storage efficiency, and visual quality. Proper selection of sampling rates and
+        quantization levels ensures a balance between image fidelity and computational efficiency,
+        benefiting diverse fields such as medical imaging, AI, remote sensing, and digital media.
+    </p>
+
+</div>
+
+</section>
+   <section id="progressreport" class="section-content vl-card mb-8 p-6 animate-fadeInUp hidden">
+          <div class="border-l-4 border-orange-600 pl-4 mb-4 flex items-center justify-between">
+            <div class="flex items-center">
+              <h2 class="text-2xl font-bold text-gray-800 flex items-center">
+                Progress Report
+              </h2>
+            </div>
+            <span class="text-sm text-gray-600">Embedded view (opens within this page)</span>
           </div>
-          <span class="text-sm text-gray-600">
-            Embedded view (opens within this page)
-          </span>
-        </div>
-
-        <div class="w-full rounded-xl overflow-hidden border border-gray-200 shadow-inner">
-          <iframe
-            src="progressreport.html"
-            title="Progress Report"
-            class="w-full"
-            style="min-height: 900px;"
-            loading="lazy">
-          </iframe>
-        </div>
-
-      </section>
-
+          <div class="w-full rounded-xl overflow-hidden border border-gray-200 shadow-inner">
+            <iframe
+              src="progressreport.html"
+              title="Progress Report"
+              class="w-full"
+              style="min-height: 900px;"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </section>
     </main>
   </div>
-
-  
-  <!-- FOOTER -->
+ <!-- FOOTER -->
 <footer class="vl-footer fixed bottom-0 left-0 right-0 z-50 h-12"> <!-- Key: h-12 = 48px -->
     <div class="footer-inner flex items-center justify-center h-full px-4">
       <p class="text-xs md:text-sm text-center text-sky-100 font-medium tracking-wide">
@@ -1004,7 +1076,7 @@
   </div>
 
   <audio id="chatbot-notification-audio" preload="auto">
-    <source src="live-chat-353605.mp3" type="audio/mpeg">
+    <source src="./audio/live-chat-353605.mp3" type="audio/mpeg">
   </audio>
 
   <script>
@@ -1049,7 +1121,7 @@
           if (panel.classList.contains('open')) closePanel();
         }, 3000);
       }
- 
+
       function openPanel() {
         panel.classList.add('open');
         toggleBtn.setAttribute('aria-expanded', 'true');

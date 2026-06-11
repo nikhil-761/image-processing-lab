@@ -3,17 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Virtual Labs | Electrical Machines Lab - Procedure</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Virtual Labs | Electrical Machines Lab - References</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./alert-theme.css">
 
-    <style>
+   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
     body {
       font-family: 'Inter', sans-serif;
-      overflow-x: hidden;
     }
 
     /* Page blur when intro popup is open */
@@ -473,7 +472,6 @@
       gap: 1rem;
     }
 
-
     .chatbot-panel-title {
       font-size: 1.05rem;
       font-weight: 700;
@@ -555,95 +553,6 @@
       text-indent: 0; /* No indentation, use spacing instead */
     }
 
-    .procedure-main {
-      min-width: 0;
-      padding-bottom: 6rem;
-    }
-
-    .procedure-content {
-      overflow: hidden;
-      min-width: 0;
-    }
-
-    .procedure-body {
-      font-size: 1rem;
-      line-height: 1.7;
-      overflow-wrap: anywhere;
-    }
-
-    .procedure-table-wrap {
-      max-width: 100%;
-      overflow-x: auto;
-      overflow-y: hidden;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-gutter: stable;
-    }
-
-    .procedure-table {
-      width: max(100%, 760px);
-      min-width: 760px;
-      border-collapse: separate;
-      border-spacing: 0;
-    }
-
-    .procedure-image {
-      width: 100%;
-      max-width: 920px;
-      max-height: min(60vh, 500px);
-      object-fit: contain;
-    }
-
-    .procedure-steps p {
-      margin: 0;
-    }
-
-    @media (max-width: 1023px) {
-      .procedure-main {
-        padding: 1rem !important;
-        padding-bottom: 6rem !important;
-      }
-
-      .procedure-content {
-        padding: 1rem !important;
-      }
-
-      .procedure-body {
-        font-size: 0.98rem;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .procedure-content {
-        border-radius: 1rem;
-      }
-
-      .procedure-body {
-        font-size: 0.95rem;
-      }
-
-      .procedure-table {
-        width: max(100%, 640px);
-        min-width: 640px;
-      }
-
-      .procedure-table th,
-      .procedure-table td {
-        padding: 0.65rem 0.55rem !important;
-      }
-
-      .procedure-table th {
-        font-size: 0.68rem !important;
-      }
-
-      .procedure-table td {
-        font-size: 0.78rem !important;
-      }
-
-      .procedure-image {
-        max-height: min(48vh, 320px);
-      }
-    }
-
     @media (max-width: 640px) {
       .chatbot-widget {
         bottom: 16px;
@@ -670,13 +579,13 @@
 <body class="bg-gray-50 min-h-screen">
 
   <!-- HEADER -->
-    <header class="vl-header shadow-xl fixed top-0 left-0 right-0 z-50">
+   <header class="vl-header shadow-xl fixed top-0 left-0 right-0 z-[1000]">
     <div class="header-inner px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between py-1 w-full">
         <!-- Logo Section - Absolute Left Corner -->
         <a href="../../main.html" class="logo-container hover:no-underline focus:no-underline"> <!-- Made logo clickable -->
           <img 
-           src="./images/image.png" 
+            src="./images/image.png" 
             alt="Virtual Labs Logo" 
             class="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12 rounded-xl object-contain bg-white p-1.5 logo-glow"
             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%230b60a8%22 width=%22100%22 height=%22100%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2240%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22 font-weight=%22bold%22%3EVL%3C/text%3E%3C/svg%3E'"
@@ -704,21 +613,21 @@
         <!-- Desktop Navigation (Optional) -->
          <nav class="top-nav hidden lg:flex items-center gap-2 lg:gap-3">
             <a href="../../main.html" class="nav-link">Home</a>
-            <a href="user_input.html?return=procedure.html" class="nav-link nav-user-link" data-user-input-link data-redirect-return="procedure.html">
+            <a href="user_input.html?return=references.html" class="nav-link nav-user-link" data-user-input-link data-redirect-return="references.html">
               <span class="nav-user-pill">
-               
+   
                 <span class="nav-user-text" data-user-text>User Input</span>
               </span>
             </a>
-           
+         
           </nav>
       </div>
     </div>
   </header>
 
- <div class="flex pt-16 min-h-screen">
+ <div class="flex pt-[70px] min-h-screen">
     <!-- Sidebar -->
-       <aside id="sidebar" class="vl-sidebar w-64 fixed inset-y-0 left-0 z-50 overflow-y-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out pt-20 lg:pt-6 pb-6">
+    <aside id="sidebar" class="vl-sidebar w-64 fixed left-0 top-[70px] bottom-0 z-[999] overflow-y-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out pb-6">
       <div class="px-4">
         <h2 class="text-lg font-semibold text-gray-800 mb-6 border-b border-gray-200 pb-4">Experiment Navigation</h2>
         <nav class="space-y-1">
@@ -806,122 +715,48 @@
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden hidden"></div>
 
     <!-- MAIN CONTENT -->
-    <main class="procedure-main flex-1 lg:ml-64 p-4 sm:p-6 pb-24">
+    <main class="flex-1 lg:ml-64 p-6">
 
-      <!-- Breadcrumb -->
-        <nav class="mb-6 text-sm sm:text-base text-gray-600 animate-slideInLeft flex flex-wrap items-center gap-x-2 gap-y-1">
+      <nav class="mb-6 text-m text-gray-600 animate-slideInLeft flex items-center space-x-2">
         <a href="#" class="hover:text-blue-600 transition-colors">Home</a>
         <span>></span>
-        <a href="#" class="hover:text-blue-600">Electrical Machines Lab</a>
+        <a href="#" class="hover:text-blue-600">Image Processing Lab</a>
         <span>></span>
-        <span class="text-gray-800 font-medium">Procedure</span>
+        <a href="#" class="hover:text-blue-600">Sampling and Quantization</a>
+        <span>></span>
+        <span class="text-gray-800 font-medium">References</span>
       </nav>
 
       <!-- TITLE CARD -->
       <div class="vl-card mb-4 overflow-hidden animate-fadeInUp rounded-lg">
-        <div class="px-4 py-3 flex items-center justify-start gap-4" style="background: linear-gradient(120deg, #021a2c, #064073, #0b60a8);">
-          <h1 class="text-lg sm:text-xl font-bold text-white leading-snug">
-            To study the Load Characteristics of DC shunt generator
+        <div class="px-4 py-3" style="background: linear-gradient(120deg, #021a2c, #064073, #0b60a8);">
+          <h1 class="text-lg md:text-xl font-bold text-white text-center leading-snug">
+            Sampling and Quantization
           </h1>
         </div>
       </div>
 
-      <!-- Procedure Steps -->
-      <section class="section-content vl-card p-4 sm:p-6 animate-fadeInUp procedure-content">
+      <!-- References Content -->
+      <section class="section-content vl-card p-6 animate-fadeInUp">
         
 
-        <div class="procedure-body space-y-6 sm:space-y-8 text-gray-700 text-base sm:text-lg leading-relaxed">
-
-          <!-- Step 1: Connections -->
-         
-       
-
-   <p>
-  <b>AI Guide:</b> To use this feature, click on the 
-  <b>“AI Guide”</b> button. The AI Guide will assist you 
-  in performing the simulation accurately at each step.
-</p>
-     <p><strong>STEP 1:</strong> Make connections as per the instructions given below:</p>
-      <div class="procedure-table-wrap rounded-lg shadow border border-gray-200">
-          <table class="procedure-table w-full table-fixed divide-y divide-gray-200">
-            <caption class="sr-only">Connections mapping between 'From' and 'To' terminals</caption>
-            <thead class="bg-gray-50">
-              <tr>
-                <!-- first column (From) -->
-                <th class="sticky top-0 z-10 px-4 py-3 text-left text-sm font-semibold text-gray-700 bg-gray-50">
-                  From
-                </th>
-        
-                <!-- the rest of the header cells (short labels centered) -->
-                <th class="sticky top-0 z-10 px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase">R</th>
-                <th class="sticky top-0 z-10 px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase">R</th>
-                <th class="sticky top-0 z-10 px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase">B</th>
-                <th class="sticky top-0 z-10 px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase">B</th>
-                <th class="sticky top-0 z-10 px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase">A2</th>
-                <th class="sticky top-0 z-10 px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase">L</th>
-                <th class="sticky top-0 z-10 px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase">F</th>
-                <th class="sticky top-0 z-10 px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase">A</th>
-                <th class="sticky top-0 z-10 px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase">L2</th>
-                <th class="sticky top-0 z-10 px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase">A4</th>
-                <th class="sticky top-0 z-10 px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase">Z4</th>
-                <th class="sticky top-0 z-10 px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase">I</th>
-                <th class="sticky top-0 z-10 px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase">J</th>
-                <th class="sticky top-0 z-10 px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase">H</th>
-                <th class="sticky top-0 z-10 px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase">H</th>
-              </tr>
-            </thead>
-        
-            <tbody class="bg-white divide-y divide-gray-100 text-sm">
-              <tr class="hover:bg-gray-50">
-                <td class="px-4 py-3 font-medium text-gray-800 bg-gray-50">To</td>
-                <td class="px-3 py-3 text-center">C</td>
-                <td class="px-3 py-3 text-center">E</td>
-                <td class="px-3 py-3 text-center">G</td>
-                <td class="px-3 py-3 text-center">A2</td>
-                <td class="px-3 py-3 text-center">Z2</td>
-                <td class="px-3 py-3 text-center">D</td>
-                <td class="px-3 py-3 text-center">Z1</td>
-                <td class="px-3 py-3 text-center">A1</td>
-                <td class="px-3 py-3 text-center">A4</td>
-                <td class="px-3 py-3 text-center">Z4</td>
-                <td class="px-3 py-3 text-center">K</td>
-                <td class="px-3 py-3 text-center">J</td>
-                <td class="px-3 py-3 text-center">L1</td>
-                <td class="px-3 py-3 text-center">A3</td>
-                <td class="px-3 py-3 text-center">Z3</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      <!-- keep the image but limit height and center it -->
-      <div class="flex justify-center my-6 sm:my-8">
-        <img src="images/Procedure.png" alt="Correct Connections Diagram" class="procedure-image max-w-full h-auto rounded-lg shadow-lg">
-      </div>
-      
-          <!-- Remaining Steps -->
-          <div class="procedure-steps space-y-3 sm:space-y-4">
-            <p><b>Note:</b> Click on the <b>“Auto Connect”</b> button to make all the connections automatically.</p>
-           <p><strong>STEP 2:</strong> Click on <b>"Check"</b> button to check the connections.</p>
-           <p><strong>STEP 3:</strong>  If connections are correct, turn ON the MCB.</p>
-           <p><strong>STEP 4:</strong> Now, move the starter handle from left to right</p>
-           <p><strong>STEP 5:</strong> Select the No. of Bulbs from the Lamp Load.</p>
-           <p><strong>STEP 6:</strong> Click on <b>"Add To Table"</b> button to add readings to the Observation Table.</p>
-           <p><strong>STEP 7:</strong> Add different readings by increasing the Lamp Load.</p>
-           <p><strong>STEP 8:</strong> Click on <b>"Graph"</b> button to generate the graph.</p>
-           <p><strong>STEP 9:</strong> Click on <b>"Report"</b> button to view the report.</p>
-           <p><strong>STEP 10:</strong> Click on <b>"Print"</b> button to print the simulation.</p>
-           <p><strong>STEP 11:</strong> Click on <b>"Reset"</b> button to reset the simulation.</p>
-          </div>
-
+        <div class="space-y-4 text-gray-700 text-lg">
+          <ol class="list-decimal list-inside space-y-3 pl-4">
+            <li>R. C. Gonzalez and R. E. Woods, <i>Digital Image Processing</i>, 4<sup>th</sup> ed. Pearson, 2018.</li>
+            <li>A. K. Jain, <i>Fundamentals of Digital Image Processing</i>. Prentice Hall, 1989.</li>
+            <li>T. K. Bose, <i>Digital Signal and Image Processing</i>. John Wiley & Sons, 2004.</li>
+            <li>S. Jayaraman, S. Esakkirajan, and T. Veerakumar, <i>Digital Image Processing</i>. Tata McGraw-Hill, 2009.</li>
+            <li>B. Chanda and D. Dutta Majumder, <i>Digital Image Processing and Analysis</i>, 2<sup>nd</sup> ed., PHI Learning, 2011.</li>
+          </ol>
         </div>
       </section>
 
       <section id="progressreport"
-               class="section-content vl-card mb-8 p-4 sm:p-6 animate-fadeInUp hidden">
+               class="section-content vl-card mb-8 p-6 animate-fadeInUp hidden">
 
-        <div class="border-l-4 border-orange-600 pl-4 mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <div class="border-l-4 border-orange-600 pl-4 mb-4 flex items-center justify-between">
           <div class="flex items-center">
-            <h2 class="text-xl sm:text-2xl font-bold text-gray-800">
+            <h2 class="text-2xl font-bold text-gray-800">
               Progress Report
             </h2>
           </div>
@@ -945,6 +780,10 @@
     </main>
   </div>
 
+  <audio id="chatbot-notification-audio" preload="auto">
+    <source src="audio/chatbot-notification.mp3" type="audio/mpeg">
+  </audio>
+
   
   <!-- FOOTER -->
 <footer class="vl-footer fixed bottom-0 left-0 right-0 z-50 h-12"> <!-- Key: h-12 = 48px -->
@@ -954,7 +793,6 @@
       </p>
     </div>
   </footer>
-
 
   <script>
     // Mobile Toggle
@@ -1001,7 +839,6 @@
     window.addEventListener('resize', () => {
       if (!mobileSidebarQuery.matches) setSidebarOpen(false);
     });
-
   </script>
 
   <div class="chatbot-widget">
@@ -1026,15 +863,11 @@
       <button type="button" class="chatbot-launcher" aria-expanded="false" aria-label="Open chatbot assistant">
       <span class="chatbot-hint-bubble">
         <span class="chatbot-hint-dot">Hi </span>
-          Ask anything about this experiment 
+        Ask anything about this experiment 
         </span>
         <img src="images/chatbot.png" alt="" aria-hidden="true" class="chatbot-launcher-image">
       </button>
   </div>
-
-  <audio id="chatbot-notification-audio" preload="auto">
-    <source src="live-chat-353605.mp3" type="audio/mpeg">
-  </audio>
  <script>
     (function () {
       const widget = document.querySelector('.chatbot-widget');
@@ -1127,6 +960,7 @@
       }
     })();
   </script>   
+
 
   <script src="./user_input_modal.js"></script>
   <script src="./progress_tracker.js"></script>

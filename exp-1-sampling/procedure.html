@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Virtual Labs | Electrical Machines Lab - References</title>
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <title>Virtual Labs | Electrical Machines Lab - Procedure</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./alert-theme.css">
 
-   <style>
+    <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
     body {
       font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
     }
 
     /* Page blur when intro popup is open */
@@ -472,6 +473,7 @@
       gap: 1rem;
     }
 
+
     .chatbot-panel-title {
       font-size: 1.05rem;
       font-weight: 700;
@@ -553,6 +555,95 @@
       text-indent: 0; /* No indentation, use spacing instead */
     }
 
+    .procedure-main {
+      min-width: 0;
+      padding-bottom: 6rem;
+    }
+
+    .procedure-content {
+      overflow: hidden;
+      min-width: 0;
+    }
+
+    .procedure-body {
+      font-size: 1rem;
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+
+    .procedure-table-wrap {
+      max-width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-gutter: stable;
+    }
+
+    .procedure-table {
+      width: max(100%, 760px);
+      min-width: 760px;
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+
+    .procedure-image {
+      width: 100%;
+      max-width: 920px;
+      max-height: min(60vh, 500px);
+      object-fit: contain;
+    }
+
+    .procedure-steps p {
+      margin: 0;
+    }
+
+    @media (max-width: 1023px) {
+      .procedure-main {
+        padding: 1rem !important;
+        padding-bottom: 6rem !important;
+      }
+
+      .procedure-content {
+        padding: 1rem !important;
+      }
+
+      .procedure-body {
+        font-size: 0.98rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .procedure-content {
+        border-radius: 1rem;
+      }
+
+      .procedure-body {
+        font-size: 0.95rem;
+      }
+
+      .procedure-table {
+        width: max(100%, 640px);
+        min-width: 640px;
+      }
+
+      .procedure-table th,
+      .procedure-table td {
+        padding: 0.65rem 0.55rem !important;
+      }
+
+      .procedure-table th {
+        font-size: 0.68rem !important;
+      }
+
+      .procedure-table td {
+        font-size: 0.78rem !important;
+      }
+
+      .procedure-image {
+        max-height: min(48vh, 320px);
+      }
+    }
+
     @media (max-width: 640px) {
       .chatbot-widget {
         bottom: 16px;
@@ -579,13 +670,13 @@
 <body class="bg-gray-50 min-h-screen">
 
   <!-- HEADER -->
-   <header class="vl-header shadow-xl fixed top-0 left-0 right-0 z-50">
+    <header class="vl-header shadow-xl fixed top-0 left-0 right-0 z-[1000]">
     <div class="header-inner px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between py-1 w-full">
         <!-- Logo Section - Absolute Left Corner -->
         <a href="../../main.html" class="logo-container hover:no-underline focus:no-underline"> <!-- Made logo clickable -->
           <img 
-            src="./images/image.png" 
+           src="./images/image.png" 
             alt="Virtual Labs Logo" 
             class="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12 rounded-xl object-contain bg-white p-1.5 logo-glow"
             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%230b60a8%22 width=%22100%22 height=%22100%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2240%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22 font-weight=%22bold%22%3EVL%3C/text%3E%3C/svg%3E'"
@@ -613,21 +704,21 @@
         <!-- Desktop Navigation (Optional) -->
          <nav class="top-nav hidden lg:flex items-center gap-2 lg:gap-3">
             <a href="../../main.html" class="nav-link">Home</a>
-            <a href="user_input.html?return=references.html" class="nav-link nav-user-link" data-user-input-link data-redirect-return="references.html">
+            <a href="user_input.html?return=procedure.html" class="nav-link nav-user-link" data-user-input-link data-redirect-return="procedure.html">
               <span class="nav-user-pill">
-   
+               
                 <span class="nav-user-text" data-user-text>User Input</span>
               </span>
             </a>
-         
+           
           </nav>
       </div>
     </div>
   </header>
 
- <div class="flex pt-16 min-h-screen">
+ <div class="flex pt-[70px] min-h-screen">
     <!-- Sidebar -->
-    <aside id="sidebar" class="vl-sidebar w-64 fixed inset-y-0 left-0 z-50 overflow-y-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out pt-20 lg:pt-6 pb-6">
+       <aside id="sidebar" class="vl-sidebar w-64 fixed left-0 top-[70px] bottom-0 z-[999] overflow-y-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out pb-6">
       <div class="px-4">
         <h2 class="text-lg font-semibold text-gray-800 mb-6 border-b border-gray-200 pb-4">Experiment Navigation</h2>
         <nav class="space-y-1">
@@ -715,51 +806,115 @@
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden hidden"></div>
 
     <!-- MAIN CONTENT -->
-    <main class="flex-1 lg:ml-64 p-6">
+    <main class="procedure-main flex-1 lg:ml-64 p-4 sm:p-6 pb-24">
 
-      <nav class="mb-6 text-m text-gray-600 animate-slideInLeft flex items-center space-x-2">
+      <!-- Breadcrumb -->
+        <nav class="mb-6 text-sm sm:text-base text-gray-600 animate-slideInLeft flex flex-wrap items-center gap-x-2 gap-y-1">
         <a href="#" class="hover:text-blue-600 transition-colors">Home</a>
         <span>></span>
-        <a href="#" class="hover:text-blue-600">Electrical Machines Lab</a>
+        <a href="#" class="hover:text-blue-600">Image Processing Labs</a>
         <span>></span>
-        <span class="text-gray-800 font-medium">References</span>
+
+        <a href="#" class="hover:text-blue-600">Sampling and Quantization</a>
+        <span>></span>
+
+        <span class="text-gray-800 font-medium">Procedure</span>
       </nav>
 
       <!-- TITLE CARD -->
       <div class="vl-card mb-4 overflow-hidden animate-fadeInUp rounded-lg">
-        <div class="px-4 py-3" style="background: linear-gradient(120deg, #021a2c, #064073, #0b60a8);">
-          <h1 class="text-lg md:text-xl font-bold text-white text-center leading-snug">
-            To study the Load Characteristics of DC shunt generator
+        <div class="px-4 py-3 flex items-center justify-start gap-4" style="background: linear-gradient(120deg, #021a2c, #064073, #0b60a8);">
+          <h1 class="text-lg sm:text-xl font-bold text-white leading-snug">
+            Sampling and Quantization
           </h1>
         </div>
       </div>
 
-      <!-- References Content -->
-      <section class="section-content vl-card p-6 animate-fadeInUp">
-        
+     <!-- Procedure Steps -->
+<section class="section-content vl-card p-4 animate-fadeInUp procedure-content">
 
-        <div class="space-y-4 text-gray-700 text-lg">
-          <ol class="list-decimal list-inside space-y-3 pl-4">
-            <li>N. Mohan, <i>Electric Machines and Drives: A First Course</i>, Wiley, 2012.</li>
-            <li>A. Veltman, D.W.J. Pulle, and R.W. DeDoncker, <i>Advanced Electrical Drives: Analysis, Modeling, Control</i>, Springer, 2011.</li>
-            <li>J.L. Kirtley, <i>Electric Power Principles: Sources, Conversion, Distribution, and Use</i>, Wiley, 2010.</li>
-            <li>A. Veltman, D.W.J. Pulle, and R.W. DeDoncker, <i>Fundamentals of Electrical Drives</i>, Springer, 2007.</li>
-            <li>I. Boldea and S.A. Nasar, <i>Electric Drives</i>, CRC Press, 2nd ed., 2006.</li>
-            <li>J. Chiasson, <i>Modeling and High Performance Control of Electric Machines</i>, Wiley-IEEE, 2005.</li>
-            <li>P.C. Krause, O. Wasynczuk, and S.D. Sudhoff, <i>Analysis of Electric Machinery and Drive Systems</i>, IEEE Press, 2nd ed., 2002.</li>
-            <li>B. Amin, <i>Induction Motors: Analysis and Torque Control</i>, Springer, 2002.</li>
-            <li>N. Mohan, <i>Advanced Electric Drives: Analysis, Control and Modeling using Simulink</i>, MNPERE, 2001.</li>
-            <li>W. Leonhard, <i>Control of Electrical Drives</i>, Springer, 3rd ed., 2001.</li>
-          </ol>
-        </div>
-      </section>
+    <div class="procedure-body text-gray-700 text-base sm:text-lg leading-relaxed">
+
+        <style>
+        .content{
+            width:100%;
+            max-width:none;
+            margin:0 !important;
+            padding:0 !important;
+            line-height:1.8;
+            text-align:justify;
+        }
+
+        .content h2{
+            font-size:2rem;
+            font-weight:700;
+            color:#222;
+            margin:0 0 12px 0 !important;
+            padding:0 !important;
+            text-align:left;
+        }
+
+        .content h3{
+            font-size:1.4rem;
+            font-weight:700;
+            color:#222;
+            margin-top:20px;
+            margin-bottom:12px;
+        }
+
+        .content ol{
+            list-style:decimal !important;
+            padding-left:40px !important;
+            margin:12px 0 20px 0 !important;
+        }
+
+        .content li{
+            display:list-item !important;
+            font-size:1.1rem;
+            margin-bottom:8px;
+            line-height:1.8;
+            color:#000;
+        }
+        </style>
+
+<div class="content">
+
+    <h2>Procedure</h2>
+
+    <h3>For Sampling</h3>
+
+    <p><b>Step 1:</b> Select an image from the available options or upload one using the <b>Upload File</b> button.</p>
+
+    <p><b>Step 2:</b> Set the scale factor.</p>
+
+    <p><b>Step 3:</b> Select the sampling method.</p>
+
+    <p><b>Step 4:</b> Click the <b>Process</b> button to continue.</p>
+
+    <p><b>Step 5:</b> Click the <b>Print</b> button to print the result.</p>
+
+    <h3>For Quantization</h3>
+
+    <p><b>Step 1:</b> Select an image from the available options or upload one using the <b>Upload File</b> button.</p>
+
+    <p><b>Step 2:</b> Select the quantization mode.</p>
+
+    <p><b>Step 3:</b> Click the <b>Process</b> button to continue.</p>
+
+    <p><b>Step 4:</b> Click the <b>Print</b> button to print the result.</p>
+
+</div>
+
+    </div>
+
+</section>
 
       <section id="progressreport"
-               class="section-content vl-card mb-8 p-6 animate-fadeInUp hidden">
+               class="section-content vl-card mb-8 p-4 sm:p-6 animate-fadeInUp hidden">
 
-        <div class="border-l-4 border-orange-600 pl-4 mb-4 flex items-center justify-between">
+        <div class="border-l-4 border-orange-600 pl-4 mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <div class="flex items-center">
-            <h2 class="text-2xl font-bold text-gray-800">
+            <h2 class="text-xl sm:text-2xl font-bold text-gray-800">
               Progress Report
             </h2>
           </div>
@@ -783,10 +938,6 @@
     </main>
   </div>
 
-  <audio id="chatbot-notification-audio" preload="auto">
-    <source src="audio/chatbot-notification.mp3" type="audio/mpeg">
-  </audio>
-
   
   <!-- FOOTER -->
 <footer class="vl-footer fixed bottom-0 left-0 right-0 z-50 h-12"> <!-- Key: h-12 = 48px -->
@@ -796,6 +947,7 @@
       </p>
     </div>
   </footer>
+
 
   <script>
     // Mobile Toggle
@@ -842,6 +994,7 @@
     window.addEventListener('resize', () => {
       if (!mobileSidebarQuery.matches) setSidebarOpen(false);
     });
+
   </script>
 
   <div class="chatbot-widget">
@@ -866,11 +1019,15 @@
       <button type="button" class="chatbot-launcher" aria-expanded="false" aria-label="Open chatbot assistant">
       <span class="chatbot-hint-bubble">
         <span class="chatbot-hint-dot">Hi </span>
-        Ask anything about this experiment 
+          Ask anything about this experiment 
         </span>
         <img src="images/chatbot.png" alt="" aria-hidden="true" class="chatbot-launcher-image">
       </button>
   </div>
+
+  <audio id="chatbot-notification-audio" preload="auto">
+    <source src="live-chat-353605.mp3" type="audio/mpeg">
+  </audio>
  <script>
     (function () {
       const widget = document.querySelector('.chatbot-widget');
@@ -963,7 +1120,6 @@
       }
     })();
   </script>   
-
 
   <script src="./user_input_modal.js"></script>
   <script src="./progress_tracker.js"></script>

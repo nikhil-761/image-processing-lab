@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Virtual Labs | Electrical Machines Lab - Pretest</title>
+  <title>Virtual Labs | Image Processing Lab - Posttest</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./alert-theme.css">
@@ -598,12 +598,12 @@
 </head>
 <body class="bg-gray-50 min-h-screen">
   <!-- HEADER -->
-  <header class="vl-header shadow-xl fixed top-0 left-0 right-0 z-50">
+  <header class="vl-header shadow-xl fixed top-0 left-0 right-0 z-[1000]">
     <div class="header-inner px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between py-1 w-full gap-3">
         <a href="../../main.html" class="logo-container hover:no-underline focus:no-underline">
           <img 
-            src="./images/image.png" 
+             src="./images/image.png" 
             alt="Virtual Labs Logo" 
             class="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12 rounded-xl object-contain bg-white p-1.5 logo-glow"
             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%230b60a8%22 width=%22100%22 height=%22100%22/%3E%3Ctext x=%2250%22 y=%2255%22 font-size=%2240%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22 font-weight=%22bold%22%3EVL%3C/text%3E%3C/svg%3E'"
@@ -628,9 +628,9 @@
 
         <nav class="top-nav hidden lg:flex items-center gap-2 lg:gap-3">
           <a href="../../main.html" class="nav-link">Home</a>
-          <a href="user_input.html?return=pretest.html" class="nav-link nav-user-link" data-user-input-link data-redirect-return="pretest.html">
+          <a href="user_input.html?return=posttest.html" class="nav-link nav-user-link" data-user-input-link data-redirect-return="posttest.html">
             <span class="nav-user-pill">
-          
+             
               <span class="nav-user-text" data-user-text>User Input</span>
             </span>
           </a>
@@ -640,9 +640,9 @@
     </div>
   </header>
 
- <div class="flex pt-16 min-h-screen">
+ <div class="flex pt-[70px] min-h-screen">
     <!-- Sidebar -->
-    <aside id="sidebar" class="vl-sidebar w-64 fixed inset-y-0 left-0 z-50 overflow-y-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out pt-20 lg:pt-6 pb-6">
+    <aside id="sidebar" class="vl-sidebar w-64 fixed left-0 top-[70px] bottom-0 z-[999] overflow-y-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out pb-6">
       <div class="px-4">
         <h2 class="text-lg font-semibold text-gray-800 mb-6 border-b border-gray-200 pb-4">Experiment Navigation</h2>
         <nav class="space-y-1">
@@ -725,15 +725,17 @@
       <nav class="mb-6 text-sm text-gray-600 animate-slideInLeft flex items-center space-x-2">
         <a href="#" class="hover:text-blue-600 transition-colors">Home</a>
         <span>></span>
-        <a href="#" class="hover:text-blue-600">Electrical Machines Lab</a>
+        <a href="#" class="hover:text-blue-600">Image Processing Lab</a>
         <span>></span>
-        <span class="text-gray-800 font-medium">Pretest</span>
+        <a href="#" class="hover:text-blue-600">Sampling and Quantization</a>
+        <span>></span>
+        <span class="text-gray-800 font-medium">Posttest</span>
       </nav>
       <!-- TITLE CARD -->
       <div class="vl-card mb-4 overflow-hidden animate-fadeInUp rounded-lg">
         <div class="px-4 py-3" style="background: linear-gradient(120deg, #021a2c, #064073, #0b60a8);">
           <h1 class="text-lg md:text-xl font-bold text-white text-center leading-snug">
-            To study the Load Characteristics of DC shunt generator
+            Sampling and Quantization
           </h1>
         </div>
       </div>
@@ -741,6 +743,7 @@
       <section class="section-content vl-card p-6 animate-fadeInUp">
      
         <div id="mcq-container" class="space-y-6 text-gray-700 text-lg"></div>
+
 <!-- Controls: Refresh + Check (LEFT SIDE) -->
 <div class="mt-6 flex items-center gap-3">
   <div class="flex gap-2">
@@ -757,31 +760,32 @@
 </div>
 <p id="result" class="mt-4 text-xl font-semibold"></p>
       </section>
-    <section id="progressreport"
-             class="section-content vl-card mb-8 p-6 animate-fadeInUp hidden">
 
-      <div class="border-l-4 border-orange-600 pl-4 mb-4 flex items-center justify-between">
-        <div class="flex items-center">
-          <h2 class="text-2xl font-bold text-gray-800">
-            Progress Report
-          </h2>
+      <section id="progressreport"
+               class="section-content vl-card mb-8 p-6 animate-fadeInUp hidden">
+
+        <div class="border-l-4 border-orange-600 pl-4 mb-4 flex items-center justify-between">
+          <div class="flex items-center">
+            <h2 class="text-2xl font-bold text-gray-800">
+              Progress Report
+            </h2>
+          </div>
+          <span class="text-sm text-gray-600">
+            Embedded view (opens within this page)
+          </span>
         </div>
-        <span class="text-sm text-gray-600">
-          Embedded view (opens within this page)
-        </span>
-      </div>
 
-      <div class="w-full rounded-xl overflow-hidden border border-gray-200 shadow-inner">
-        <iframe
-          src="progressreport.html"
-          title="Progress Report"
-          class="w-full"
-          style="min-height: 900px;"
-          loading="lazy">
-        </iframe>
-      </div>
+        <div class="w-full rounded-xl overflow-hidden border border-gray-200 shadow-inner">
+          <iframe
+            src="progressreport.html"
+            title="Progress Report"
+            class="w-full"
+            style="min-height: 900px;"
+            loading="lazy">
+          </iframe>
+        </div>
 
-    </section>
+      </section>
 
     </main>
   </div>
@@ -809,27 +813,46 @@
 
 <script>
 /* ------------------ 20 QUESTIONS ------------------ */
- const questions = [
-  {id:1,text:'DC shunt generator has terminal voltage versus load current characteristic which is',choices:['A. Constant','B. Slightly drooping','C. Slightly rising','D. Highly drooping'],answer:'B',selected:null},
-  {id:2,text:'Which dc generator gives constant output voltage at all loads?',choices:['A. Shunt generator','B. Series generator','C. Short shunt compound generator','D. Level compound generator'],answer:'D',selected:null},
-  {id:3,text:'In a DC shunt generator, the shunt field current mainly depends on:',choices:['A. Load current','B. Terminal voltage','C. Armature resistance','D. Speed only'],answer:'B',selected:null},
-  {id:4,text:'When a DC shunt generator is loaded, which loss increases significantly with load current?',choices:['A. Iron loss','B. Mechanical loss','C. Armature copper loss','D. Field copper loss'],answer:'C',selected:null},
-  {id:5,text:'The voltage regulation of a DC shunt generator is defined as:',choices:['A.  Change in speed from no-load to full-load','B. Ratio of generated emf to terminal voltage','C. Percentage change in terminal voltage from no-load to full-load','D. Ratio of load current to field current'],answer:'C',selected:null},
-  {id:6,text:'Main function of DC generator is:',choices:['A) Convert electrical→mechanical','B) Convert mechanical→electrical','C) Step up voltage','D) Step down current'],answer:'B',selected:null},
-  {id:7,text:'Field winding of DC shunt generator is connected:',choices:['A) In series','B) In parallel','C) Across load','D) In series with load'],answer:'B',selected:null},
-  {id:8,text:'Generated emf in DC generator:',choices:['A) E=V+IaRa','B) E=kΦN','C) E=V/I','D) E=P/I'],answer:'B',selected:null},
-  {id:9,text:'Armature reaction causes:',choices:['A) Increase flux','B) Decrease flux','C) No effect','D) Constant emf'],answer:'B',selected:null},
-  {id:10,text:'Load characteristic of DC shunt generator is:',choices:['A) Ia–If','B) V–IL','C) IL–speed','D) torque–speed'],answer:'B',selected:null},
-  {id:11,text:'As load current increases terminal voltage:',choices:['A) Increases','B) Decreases','C) Constant','D) Zero'],answer:'B',selected:null},
-  {id:12,text:'Drop in terminal voltage due to:',choices:['A) Armature reaction + resistance','B) Commutator resistance','C) Eddy current','D) Field resistance'],answer:'A',selected:null},
-  {id:13,text:'Residual magnetism needed for:',choices:['A) Commutation','B) Self-excitation','C) Speed control','D) Field regulation'],answer:'B',selected:null},
-  {id:14,text:'OCC curve represents:',choices:['A) V vs If (constant speed)','B) V vs IL','C) I vs R','D) torque vs speed'],answer:'A',selected:null},
-  {id:15,text:'Internal characteristic shows:',choices:['A) Eg–If','B) V–If','C) Eg–Ia','D) V–Ia'],answer:'C',selected:null},
-  {id:16,text:'External characteristic shows:',choices:['A) Eg–If','B) V–IL','C) Eg–Ia','D) torque–speed'],answer:'B',selected:null},
-  {id:17,text:'Losses in DC generator:',choices:['A) Copper','B) Iron','C) Mechanical','D) All'],answer:'D',selected:null},
-  {id:18,text:'Load test determines:',choices:['A) Armature efficiency','B) Speed regulation','C) Load characteristics','D) Field efficiency'],answer:'C',selected:null},
-  {id:19,text:'Field current in DC shunt generator is:',choices:['A) Constant','B) Depends on speed','C) Depends on load','D) Zero'],answer:'C',selected:null},
-  {id:20,text:'Terminal voltage at full load:',choices:['A) = Eg','B) > Eg','C) < Eg','D) Independent'],answer:'C',selected:null},
+const questions = [
+  {id:1,text:'In the sampling experiment, the main purpose of changing the scale factor is to study:',choices:['A) Image compression ratio','B) Change in spatial resolution','C) Change in color depth','D) Change in file format'],answer:'B',selected:null},
+
+  {id:2,text:'When the scale factor is set below 1, the image generally becomes:',choices:['A) Larger and sharper','B) Smaller with reduced detail','C) Color inverted','D) Binary'],answer:'B',selected:null},
+
+  {id:3,text:'Which interpolation method is the fastest and simplest in the simulation?',choices:['A) Cubic','B) Linear','C) Nearest','D) Bilinear'],answer:'C',selected:null},
+
+  {id:4,text:'Linear interpolation is also known as:',choices:['A) Bicubic interpolation','B) Bilinear interpolation','C) Nearest interpolation','D) Median interpolation'],answer:'B',selected:null},
+
+  {id:5,text:'Cubic interpolation generally gives:',choices:['A) The lowest quality output','B) The most blocky result','C) Better smoothness and visual quality','D) No change in image size'],answer:'C',selected:null},
+
+  {id:6,text:'If the scale factor is 2, the output image size will usually be:',choices:['A) Half of the original size','B) Same as original size','C) Double in each dimension','D) Zero'],answer:'C',selected:null},
+
+  {id:7,text:'The sampling experiment mainly demonstrates the effect of changing:',choices:['A) Intensity values','B) Pixel spacing','C) File extension','D) Image brightness only'],answer:'B',selected:null},
+
+  {id:8,text:'Which of the following is a correct observation when an image is downsampled?',choices:['A) More pixels are added','B) Spatial detail decreases','C) Bit depth increases','D) The image becomes binary'],answer:'B',selected:null},
+
+  {id:9,text:'Why is interpolation needed in resizing an image?',choices:['A) To remove the file header','B) To estimate pixel values at new positions','C) To convert RGB to CMYK','D) To increase file size'],answer:'B',selected:null},
+
+  {id:10,text:'Which method is usually preferred for high-quality enlargement of photographs?',choices:['A) Nearest','B) Linear','C) Cubic','D) Thresholding'],answer:'C',selected:null},
+
+  {id:11,text:'Using the formula L = 2^n, how many bits per pixel are required to represent exactly 64 distinct grey levels?',choices:['A) 4 bits','B) 5 bits','C) 6 bits','D) 7 bits'],answer:'C',selected:null},
+
+  {id:12,text:'A 512×512 pixel image is quantized at 2 bits per pixel. What is the total number of bits required to store this image (ignoring any header or compression)?',choices:['A) 262,144 bits','B) 524,288 bits','C) 1,048,576 bits','D) 2,097,152 bits'],answer:'B',selected:null},
+
+  {id:13,text:'In the quantization tab, bit depth controls:',choices:['A) Spatial resolution','B) Number of intensity levels','C) Image dimensions','D) Sampling frequency'],answer:'B',selected:null},
+
+  {id:14,text:'A 2-bit quantized image can represent:',choices:['A) 2 levels','B) 4 levels','C) 8 levels','D) 16 levels'],answer:'B',selected:null},
+
+  {id:15,text:'The default 8-Bit quantization in the simulation produces how many intensity levels, and why is this considered perceptually adequate for most images?',choices:['A) 64 levels — sufficient for binary images','B) 128 levels — matches the human eye dynamic range','C) 256 levels — sufficient for the human eye to perceive smooth gradients','D) 512 levels — required for HDR imaging'],answer:'C',selected:null},
+
+  {id:16,text:'A higher bit depth generally gives:',choices:['A) Fewer gray levels','B) More gray levels and smoother tone transitions','C) Blockier output','D) Lower spatial resolution'],answer:'B',selected:null},
+
+  {id:17,text:'The banding effect in a low-bit image is also called:',choices:['A) Aliasing','B) Posterization','C) Blurring','D) Upsampling'],answer:'B',selected:null},
+
+  {id:18,text:'Which image will show quantization banding most clearly?',choices:['A) Binary logo','B) Smooth gradient image','C) Text file','D) Noisy spreadsheet image'],answer:'B',selected:null},
+
+  {id:19,text:'Sampling and quantization together are used to create:',choices:['A) A continuous analog image','B) A digital image','C) A compressed video','D) A binary signal only'],answer:'B',selected:null},
+
+  {id:20,text:'The overall objective of this simulation is to understand how changing sampling and quantization affects:',choices:['A) Network speed','B) Image quality','C) Keyboard input','D) File names'],answer:'B',selected:null}
 ];
 
 /* ------------------ SETTINGS ------------------ */
@@ -840,11 +863,11 @@ const refreshBtn = document.getElementById("refresh-btn");
 const checkBtn = document.getElementById("check-btn");
 
 const ASSESSMENT_KEYS = {
-  score: "vlab_exp2_pretest_score",
-  total: "vlab_exp2_pretest_total",
-  attemptedIds: "vlab_exp2_pretest_attempted_ids",
-  correctIds: "vlab_exp2_pretest_correct_ids",
-  updatedAt: "vlab_exp2_pretest_updated_at"
+  score: "vlab_exp2_posttest_score",
+  total: "vlab_exp2_posttest_total",
+  attemptedIds: "vlab_exp2_posttest_attempted_ids",
+  correctIds: "vlab_exp2_posttest_correct_ids",
+  updatedAt: "vlab_exp2_posttest_updated_at"
 };
 
 function readWindowNameData() {
@@ -1025,7 +1048,7 @@ function pickRandomSet() {
 
 /* ------------------ RENDER CURRENT SET (Q1..Q5) ------------------ */
 function showPage() {
-   container.innerHTML = "";
+  container.innerHTML = "";
   if (result) {
     result.textContent = "";
     result.classList.remove("text-green-600", "text-red-600");
@@ -1039,7 +1062,7 @@ function showPage() {
     div.innerHTML = `
       <p><b>Q${i + 1}.</b> ${q.text}</p>
       ${q.choices.map(c => {
-        const val = c[0].toUpperCase();
+        const val = c.trim()[0].toUpperCase();
         return `
           <label class="block option-label">
             <input type="radio" name="q${q.id}" value="${val}" ${q.selected === val ? "checked":""}> ${c}
@@ -1078,16 +1101,16 @@ function updateCheckButtonState() {
   checkBtn.disabled = false;
 }
 
-const PRETEST_WELCOME_ALERT_MESSAGE = "Here, you will receive 5 questions at a time. Each time you click on the Refresh button, a new set of questions will be generated. Please note that all your attempted questions will be recorded and reflected in your Progress Report if you choose to generate it.";
-const PRETEST_WELCOME_ALERT_AUDIO_SRC = "./audio/pretestpostestaudio.wav";
+const POSTTEST_WELCOME_ALERT_MESSAGE = "Here, you will receive 5 questions at a time. Each time you click on the Refresh button, a new set of questions will be generated. Please note that all your attempted questions will be recorded and reflected in your Progress Report if you choose to generate it.";
+const POSTTEST_WELCOME_ALERT_AUDIO_SRC = "./audio/pretestpostestaudio.wav";
 let popupOnClose = null;
 
 function playMappedAlertAudio(soundEl, message) {
   if (!soundEl || typeof soundEl.play !== "function") return;
   const normalizedMessage = String(message || "").trim();
-  if (normalizedMessage !== PRETEST_WELCOME_ALERT_MESSAGE) return;
-  if (soundEl.getAttribute("src") !== PRETEST_WELCOME_ALERT_AUDIO_SRC) {
-    soundEl.setAttribute("src", PRETEST_WELCOME_ALERT_AUDIO_SRC);
+  if (normalizedMessage !== POSTTEST_WELCOME_ALERT_MESSAGE) return;
+  if (soundEl.getAttribute("src") !== POSTTEST_WELCOME_ALERT_AUDIO_SRC) {
+    soundEl.setAttribute("src", POSTTEST_WELCOME_ALERT_AUDIO_SRC);
   }
   soundEl.currentTime = 0;
   const playPromise = soundEl.play();
@@ -1096,103 +1119,103 @@ function playMappedAlertAudio(soundEl, message) {
   }
 }
 
- function showPopup(message, title = "Alert", options = {}) {
-   if (!message) return;
-   const onClose = typeof options?.onClose === "function" ? options.onClose : null;
-   popupOnClose = onClose;
+function showPopup(message, title = "Alert", options = {}) {
+  if (!message) return;
+  const onClose = typeof options?.onClose === "function" ? options.onClose : null;
+  popupOnClose = onClose;
 
-   const modal = document.getElementById("warningModal");
-   if (!modal) {
-     window.alert(String(message));
-     if (onClose) onClose();
-     return;
-   }
+  const modal = document.getElementById("warningModal");
+  if (!modal) {
+    window.alert(String(message));
+    if (onClose) onClose();
+    return;
+  }
 
-   const box = modal.querySelector(".modal-box");
-   const msg = modal.querySelector("#modalMessage");
-   const ttl = modal.querySelector("#modalTitle");
-   const sound = document.getElementById("alertSound");
-   const okBtn = modal.querySelector("[data-modal-close]");
+  const box = modal.querySelector(".modal-box");
+  const msg = modal.querySelector("#modalMessage");
+  const ttl = modal.querySelector("#modalTitle");
+  const sound = document.getElementById("alertSound");
+  const okBtn = modal.querySelector("[data-modal-close]");
 
-   if (ttl) ttl.textContent = String(title || "Alert");
-   if (msg) msg.textContent = String(message);
+  if (ttl) ttl.textContent = String(title || "Alert");
+  if (msg) msg.textContent = String(message);
 
-   if (box) {
-     box.classList.remove("closing");
-     box.classList.remove("danger");
-   }
+  if (box) {
+    box.classList.remove("closing");
+    box.classList.remove("danger");
+  }
 
-   modal.classList.add("show");
-   document.body.classList.add("is-modal-open");
-   window.setTimeout(() => okBtn?.focus?.(), 0);
+  modal.classList.add("show");
+  document.body.classList.add("is-modal-open");
+  window.setTimeout(() => okBtn?.focus?.(), 0);
 
-   playMappedAlertAudio(sound, message);
- }
+  playMappedAlertAudio(sound, message);
+}
 
- function closePopup() {
-   const modal = document.getElementById("warningModal");
-   if (!modal) return;
-   const box = modal.querySelector(".modal-box");
-   const sound = document.getElementById("alertSound");
-   const onClose = popupOnClose;
-   popupOnClose = null;
+function closePopup() {
+  const modal = document.getElementById("warningModal");
+  if (!modal) return;
+  const box = modal.querySelector(".modal-box");
+  const sound = document.getElementById("alertSound");
+  const onClose = popupOnClose;
+  popupOnClose = null;
 
-   if (box) {
-     box.classList.add("closing");
-   }
+  if (box) {
+    box.classList.add("closing");
+  }
 
-   window.setTimeout(() => {
-     modal.classList.remove("show");
-     if (box) {
-       box.classList.remove("closing");
-     }
-     document.body.classList.remove("is-modal-open");
-     if (onClose) onClose();
-   }, 450);
+  window.setTimeout(() => {
+    modal.classList.remove("show");
+    if (box) {
+      box.classList.remove("closing");
+    }
+    document.body.classList.remove("is-modal-open");
+    if (onClose) onClose();
+  }, 450);
 
-   if (sound && typeof sound.pause === "function") {
-     sound.pause();
-   }
- }
+  if (sound && typeof sound.pause === "function") {
+    sound.pause();
+  }
+}
 
- function isPopupOpen() {
-   const modal = document.getElementById("warningModal");
-   return !!(modal && modal.classList.contains("show"));
- }
+function isPopupOpen() {
+  const modal = document.getElementById("warningModal");
+  return !!(modal && modal.classList.contains("show"));
+}
 
- (function initAlertModal() {
-   const modal = document.getElementById("warningModal");
-   if (!modal) return;
+(function initAlertModal() {
+  const modal = document.getElementById("warningModal");
+  if (!modal) return;
 
-   const closeBtn = modal.querySelector("[data-modal-close]");
-   if (closeBtn) closeBtn.addEventListener("click", closePopup);
+  const closeBtn = modal.querySelector("[data-modal-close]");
+  if (closeBtn) closeBtn.addEventListener("click", closePopup);
 
-   modal.addEventListener("click", (event) => {
-     if (event.target === modal) {
-       closePopup();
-     }
-   });
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      closePopup();
+    }
+  });
 
-   document.addEventListener("keydown", (event) => {
-     if (event.key === "Escape" && isPopupOpen()) {
-       closePopup();
-     }
-   });
- })();
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && isPopupOpen()) {
+      closePopup();
+    }
+  });
+})();
 
-/* ------------------ CHECK ANSWERS for CURRENT SET ------------------ */
+/* ------------------ ATTEMPT GUARD ------------------ */
 function attemptAlreadyUsedAlert() {
   showPopup("This set is already checked. Use Refresh Questions to load a new set.", "Notice");
 }
 
 function finalizeAttempt() {
   setLocked = true;
-  // Lock current selections to prevent re-submission tweaks
   container.querySelectorAll("input[type='radio']").forEach(input => {
     input.disabled = true;
   });
 }
 
+/* ------------------ CHECK ANSWERS for CURRENT SET ------------------ */
 function checkAnswers() {
   if (setLocked) {
     attemptAlreadyUsedAlert();
@@ -1276,9 +1299,9 @@ checkBtn.addEventListener("click", () => {
 });
 
 /* ------------------ INITIALIZE ------------------ */
-const pretestWelcomeMessage = PRETEST_WELCOME_ALERT_MESSAGE;
+const posttestWelcomeMessage = POSTTEST_WELCOME_ALERT_MESSAGE;
 pickRandomSet();
-showPopup(pretestWelcomeMessage, "Welcome to the Pretest section");
+showPopup(posttestWelcomeMessage, "Welcome to the Posttest section");
 </script>
 
 <!-- CHATBOT WIDGET -->
@@ -1308,10 +1331,10 @@ showPopup(pretestWelcomeMessage, "Welcome to the Pretest section");
     <button type="button" class="chatbot-launcher" aria-expanded="false" aria-label="Open chatbot assistant">
     <span class="chatbot-hint-bubble">
       <span class="chatbot-hint-dot">Hi </span>
-       Ask anything about this experiment 
+       Ask anything about this experiment
       </span>
       <img src="images/chatbot.png" alt="" aria-hidden="true" class="chatbot-launcher-image">
-  </button>
+    </button>
 </div>
 
 <audio id="chatbot-notification-audio" preload="auto">
@@ -1410,7 +1433,7 @@ showPopup(pretestWelcomeMessage, "Welcome to the Pretest section");
     })();
   </script>   
 
- 
+
   <script src="./user_input_modal.js"></script>
   <script src="./progress_tracker.js"></script>
   <script src="./progress_report_embed.js"></script>
